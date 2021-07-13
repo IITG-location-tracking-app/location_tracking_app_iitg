@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:location_tracking_app/Models/Group.dart';
+import 'package:location_tracking_app_iitg/Models/Group.dart';
 
 class Search extends StatefulWidget {
   const Search({Key? key}) : super(key: key);

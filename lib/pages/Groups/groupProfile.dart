@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:location_tracking_app/Models/Group.dart';
-import 'package:location_tracking_app/Models/User.dart';
+import 'package:location_tracking_app_iitg/Models/Group.dart';
+import 'package:location_tracking_app_iitg/Models/User.dart';
 
 class GroupProfile extends StatefulWidget {
   final Group grp;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
-import 'package:location_tracking_app/Models/User.dart' as userData;
+import 'package:location_tracking_app_iitg/Models/User.dart' as userData;
 
 class SignUpPage extends StatefulWidget {
   SignUpPage({Key? key}) : super(key: key);

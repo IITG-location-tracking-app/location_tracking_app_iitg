@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:location_tracking_app/pages/Maps/map.dart';
+import 'package:location_tracking_app_iitg/pages/Maps/map.dart';
 
 class HomePage extends StatefulWidget {
   final String grpDocId;

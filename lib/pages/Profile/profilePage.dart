@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:location_tracking_app/pages/Profile/edit_profile_page.dart';
-import 'package:location_tracking_app/pages/Profile/widget/appbar_widget.dart';
-import 'package:location_tracking_app/pages/Profile/widget/button_widget.dart';
-import 'package:location_tracking_app/pages/Profile/widget/numbers_widget.dart';
-import 'package:location_tracking_app/pages/Profile/widget/profile_widget.dart';
+import 'package:location_tracking_app_iitg/pages/Profile/edit_profile_page.dart';
+import 'package:location_tracking_app_iitg/pages/Profile/widget/appbar_widget.dart';
+import 'package:location_tracking_app_iitg/pages/Profile/widget/button_widget.dart';
+import 'package:location_tracking_app_iitg/pages/Profile/widget/numbers_widget.dart';
+import 'package:location_tracking_app_iitg/pages/Profile/widget/profile_widget.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:location_tracking_app/shared/loading.dart';
+import 'package:location_tracking_app_iitg/shared/loading.dart';
 
 class ProfilePage extends StatefulWidget {
   @override

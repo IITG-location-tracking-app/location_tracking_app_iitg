@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:location_tracking_app/pages/Groups/groups.dart';
-import 'package:location_tracking_app/pages/HomePage.dart';
-import 'package:location_tracking_app/pages/Authenticate/SignInPage.dart';
+import 'package:location_tracking_app_iitg/pages/Groups/groups.dart';
+import 'package:location_tracking_app_iitg/pages/HomePage.dart';
+import 'package:location_tracking_app_iitg/pages/Authenticate/SignInPage.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 

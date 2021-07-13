@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:location_tracking_app/pages/Groups/groupProfile.dart';
-import 'package:location_tracking_app/pages/HomePage.dart';
+import 'package:location_tracking_app_iitg/pages/Groups/groupProfile.dart';
+import 'package:location_tracking_app_iitg/pages/HomePage.dart';
 import 'package:provider/provider.dart';
-import 'package:location_tracking_app/Models/Group.dart';
+import 'package:location_tracking_app_iitg/Models/Group.dart';
 
 class GroupList extends StatefulWidget {
   const GroupList({Key? key}) : super(key: key);

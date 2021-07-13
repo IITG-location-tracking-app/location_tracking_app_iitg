@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:location_tracking_app/Service/grp_service.dart';
-import 'package:location_tracking_app/pages/Groups/groupList.dart';
+import 'package:location_tracking_app_iitg/Service/grp_service.dart';
+import 'package:location_tracking_app_iitg/pages/Groups/groupList.dart';
 import 'package:provider/provider.dart';
-import 'package:location_tracking_app/Models/Group.dart';
-import 'package:location_tracking_app/Service/Auth_Service.dart';
+import 'package:location_tracking_app_iitg/Models/Group.dart';
+import 'package:location_tracking_app_iitg/Service/Auth_Service.dart';
 
 class Groups extends StatefulWidget {
   const Groups({Key? key}) : super(key: key);
