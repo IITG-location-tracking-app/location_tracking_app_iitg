@@ -13,7 +13,9 @@ class Search extends StatefulWidget {
 class _SearchState extends State<Search> {
   TextEditingController _searchQuery = TextEditingController();
   late String grpName;
+
   bool isSnackBarActive = false;
+
   CollectionReference userCollection =
       FirebaseFirestore.instance.collection('users');
   List<QueryDocumentSnapshot> _searchedUsernamesDoc = <QueryDocumentSnapshot>[];
@@ -39,6 +41,7 @@ class _SearchState extends State<Search> {
       floatingActionButton: FloatingActionButton(
           child: Icon(Icons.check),
           onPressed: () async {
+
             if (!isSnackBarActive) {
               final snackbar = SnackBar(
                   duration: Duration(days: 1),
@@ -88,6 +91,7 @@ class _SearchState extends State<Search> {
                 isSnackBarActive = true;
               });
             }
+
           }),
       appBar: AppBar(
         title: Text('Create Group'),
