@@ -38,7 +38,7 @@ class _MapScreenState extends State<MapScreen> {
   @override
   Widget build(BuildContext context) {
     return isLoading
-        ? CircularProgressIndicator()
+        ? Center(child: CircularProgressIndicator())
         : Stack(
             children: <Widget>[
               GoogleMap(

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
 import 'package:location_tracking_app_iitg/shared/loading.dart';
-
+import 'package:location_tracking_app_iitg/Service/Auth_Service.dart';
 class SignInPage extends StatefulWidget {
   SignInPage({Key? key}) : super(key: key);
 
@@ -16,6 +16,7 @@ class _SignInPageState extends State<SignInPage> {
   TextEditingController _pwdController = TextEditingController();
   bool circular = false;
   bool loading = false;
+  AuthClass authClass = AuthClass();
 
   @override
   Widget build(BuildContext context) {
@@ -40,6 +41,23 @@ class _SignInPageState extends State<SignInPage> {
                     ),
                     SizedBox(
                       height: 20,
+                    ),
+                    buttonItem("assets/google.svg", "Continue with Google", 25,
+                        () async {
+                      setState(() {
+                        loading = true;
+                      });
+                      await authClass.googleSignIn(context);
+                      // setState(() {
+                      //   loading = false;
+                      // });
+                    }),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Text(
+                      "Or",
+                      style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                     SizedBox(
                       height: 18,
