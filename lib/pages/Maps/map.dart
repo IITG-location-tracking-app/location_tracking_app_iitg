@@ -189,4 +189,12 @@ class _MapScreenState extends State<MapScreen> {
     });
     this.fetchData();
   }
+
+
+  @override
+  void dispose() {
+    mapController!.dispose();
+    stream.drain();
+    super.dispose();
+  }
 }

@@ -62,15 +62,16 @@ class _GroupsState extends State<Groups> {
               Navigator.of(context).pushNamed('/profile');
             },
           ),
-          ListTile(
-            leading: Icon(Icons.search),
-            title: Text('Groups'),
-            selected: _selectedDestination == 1,
-            onTap: () {
-              selectDestination(1);
-              Navigator.of(context).pushNamed('/groups');
-            },
-          ),
+          // ListTile(
+          //   leading: Icon(Icons.search),
+          //   title: Text('Groups'),
+          //   selected: _selectedDestination == 1,
+          //   onTap: () {
+          //     selectDestination(1);
+          //     Navigator.of(context).pushNamed('/groups');
+          //   },
+          // ),
+
           // ListTile(
           //   leading: Icon(Icons.label),
           //   title: Text('Test Page'),

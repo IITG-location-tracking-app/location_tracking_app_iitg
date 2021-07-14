@@ -13,7 +13,9 @@ class Search extends StatefulWidget {
 class _SearchState extends State<Search> {
   TextEditingController _searchQuery = TextEditingController();
   late String grpName;
-  
+
+  bool isSnackBarActive = false;
+
   CollectionReference userCollection =
       FirebaseFirestore.instance.collection('users');
   List<QueryDocumentSnapshot> _searchedUsernamesDoc = <QueryDocumentSnapshot>[];
@@ -39,47 +41,57 @@ class _SearchState extends State<Search> {
       floatingActionButton: FloatingActionButton(
           child: Icon(Icons.check),
           onPressed: () async {
-            final snackbar = SnackBar(
-                duration: Duration(days: 1),
-                content: Row(
-                  children: [
-                    Expanded(
-                      child: TextFormField(
-                        style: TextStyle(
-                          fontSize: 17,
-                          color: Colors.white,
-                        ),
-                        decoration: InputDecoration(
-                          labelText: 'Group Name',
-                          labelStyle: TextStyle(
+
+            if (!isSnackBarActive) {
+              final snackbar = SnackBar(
+                  duration: Duration(days: 1),
+                  content: Row(
+                    children: [
+                      Expanded(
+                        child: TextFormField(
+                          style: TextStyle(
                             fontSize: 17,
                             color: Colors.white,
                           ),
+                          decoration: InputDecoration(
+                            labelText: 'Group Name',
+                            labelStyle: TextStyle(
+                              fontSize: 17,
+                              color: Colors.white,
+                            ),
+                          ),
+                          onChanged: (value) {
+                            setState(() {
+                              grpName = value;
+                            });
+                          },
                         ),
-                        onChanged: (value) {
-                          setState(() {
-                            grpName = value;
-                          });
-                        },
                       ),
-                    ),
-                    IconButton(
-                        onPressed: () async {
-                          List<String> _selectedUsernamesUid = <String>[];
-                          _selectedUsernamesDoc.forEach((doc) {
-                            _selectedUsernamesUid.add(doc['uid']);
-                          });
-                          Group newGrp = Group(
-                              grpName: grpName,
-                              userUidList: _selectedUsernamesUid);
-                          await newGrp.createGrp();
-                          ScaffoldMessenger.of(context).hideCurrentSnackBar();
-                          Navigator.of(context).pop();
-                        },
-                        icon: Icon(Icons.forward))
-                  ],
-                ));
-            ScaffoldMessenger.of(context).showSnackBar(snackbar);
+                      IconButton(
+                          onPressed: () async {
+                            List<String> _selectedUsernamesUid = <String>[];
+                            _selectedUsernamesDoc.forEach((doc) {
+                              _selectedUsernamesUid.add(doc['uid']);
+                            });
+                            Group newGrp = Group(
+                                grpName: grpName,
+                                userUidList: _selectedUsernamesUid);
+                            await newGrp.createGrp();
+                            ScaffoldMessenger.of(context).removeCurrentSnackBar();
+                            setState(() {
+                              isSnackBarActive = false;
+                            });
+                            Navigator.of(context).pop();
+                          },
+                          icon: Icon(Icons.forward))
+                    ],
+                  ));
+              ScaffoldMessenger.of(context).showSnackBar(snackbar);
+              setState(() {
+                isSnackBarActive = true;
+              });
+            }
+
           }),
       appBar: AppBar(
         title: Text('Create Group'),
