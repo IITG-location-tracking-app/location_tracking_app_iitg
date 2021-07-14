@@ -103,7 +103,7 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
             const SizedBox(height: 16),
             Text(
-              'You can edit your profile from here.',
+              'You can edit your profile here.',
               style: TextStyle(fontSize: 16, height: 1.4),
             ),
           ],
