@@ -82,17 +82,17 @@ class _SignInPageState extends State<SignInPage> {
                         ),
                       ],
                     ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      "Forgot Password?",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
+                    // SizedBox(
+                    //   height: 10,
+                    // ),
+                    // Text(
+                    //   "Forgot Password?",
+                    //   style: TextStyle(
+                    //     color: Colors.white,
+                    //     fontSize: 16,
+                    //     fontWeight: FontWeight.w600,
+                    //   ),
+                    // ),
                   ],
                 ),
               ),
