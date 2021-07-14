@@ -4,7 +4,7 @@ FirebaseAuth _auth = FirebaseAuth.instance;
 
 class User {
   static const tempUserImageUrl =
-      "https://firebasestorage.googleapis.com/v0/b/location-tracking-app-9cfc4.appspot.com/o/user.jpg?alt=media&token=3701e1b3-5ce7-474f-9d62-25106d6995f6";
+      "https://firebasestorage.googleapis.com/v0/b/location-tracking-app-e5fd6.appspot.com/o/user.jpg?alt=media&token=09b622c8-e136-47eb-83ee-6e8b1c054322";
   final String uid;
   final String? name;
   final String? imageUrl;
