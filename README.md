@@ -7,7 +7,7 @@ The application is built using Flutter with Firebase and Firestore to handle the
 
 ## Using the APK
 - The pre-built .apk file for the app can be downloaded [here](https://drive.google.com/file/d/11gRFkX5z8_vxo-lSKzv3d1zy6IYXc863/view?usp=sharing).
-- Open the file and select the install option.
+- Open the file in your android device and select the install option.
 - Once installed, give necessary permissions and start using the application.
 
 
