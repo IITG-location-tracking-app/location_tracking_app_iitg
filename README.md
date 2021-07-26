@@ -1,15 +1,14 @@
 # Live Location Tracker
 
 This is a mobile application to share your realtime location with GPS tracking and stay connected with your friends, families and co-workers.
-The application is built using Flutter with Firebase and Firestore to handle the authentication of users and data management.
 
-The pre-compiled .apk file for the app can be downloaded [here](https://github.com/pallavpp/material-hosting/raw/main/Location_Tracking_App_ReadMe_Material/APK%20File).
+The application is built using Flutter with Firebase and Firestore to handle the authentication of users and data management.
 
 
 ## Using the APK
-- Download the APK and open it in your mobile.
-- Give necessary permissions.
-- Install and start using the application.
+- The pre-compiled .apk file for the app can be downloaded [here](https://www.dropbox.com/s/37thsls4aiq3p87/APK%20File?dl=0).
+- Open the file and select the install option.
+- Once installed, give necessary permissions and start using the application.
 
 
 ## Features
@@ -38,7 +37,7 @@ The pre-compiled .apk file for the app can be downloaded [here](https://github.c
 
 
 ## Contributors
-  This app has been designed and developed by
+  This app has been designed and developed by:
   - [Pallav Pandey](https://github.com/pallavpp)
   - [Anurag Singhal](https://github.com/Anu8690)
   - [Aryan Rathee](https://github.com/aryanrathee)
