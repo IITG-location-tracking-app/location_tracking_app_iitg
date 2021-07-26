@@ -1,11 +1,11 @@
 # Location Sharing App
 
 This is a mobile application to share your realtime location with GPS tracking and stay connected with your friends, families and co-workers.
-
 The application is built using Flutter with Firebase and Firestore to handle the authentication of users and data management.
 
 
 ## Using the APK
+
 - The pre-built .apk file for the app can be downloaded [here](https://drive.google.com/file/d/11gRFkX5z8_vxo-lSKzv3d1zy6IYXc863/view?usp=sharing).
 - Open the file in your android device and select the install option.
 - Once installed, give necessary permissions and start using the application.
@@ -31,12 +31,14 @@ The application is built using Flutter with Firebase and Firestore to handle the
 
 
 ## How the Location Sharing Works?
+
 - The device gets its continous location updates from GPS using the Google Maps API.
 - Location data for the user is updated in their respective firestore documents, and subsequently in the group documents.
 - Other devices sharing goups with the first user read that firebase firestore document and show the marker in the stored location.
 
 
 ## Contributors
+
   This app has been designed and developed by:
   - [Pallav Pandey](https://github.com/pallavpp)
   - [Anurag Singhal](https://github.com/Anu8690)
