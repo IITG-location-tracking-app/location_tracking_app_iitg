@@ -1,6 +1,7 @@
 # Location Sharing App
 This is a mobile application to share your realtime location with GPS tracking and stay connected with your friends, families and co-workers.
-The application is built using Flutter with Firebase and Firestore to handle the authentication of users and data management.
+
+It is built using Flutter with Firebase and Firestore to handle the authentication of users and data management.
 
 
 ## Using the APK
