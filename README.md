@@ -1,4 +1,4 @@
-# Live Location Tracker
+# Location Sharing App
 
 This is a mobile application to share your realtime location with GPS tracking and stay connected with your friends, families and co-workers.
 
@@ -6,28 +6,28 @@ The application is built using Flutter with Firebase and Firestore to handle the
 
 
 ## Using the APK
-- The pre-compiled .apk file for the app can be downloaded [here](https://www.dropbox.com/s/37thsls4aiq3p87/APK%20File?dl=0).
+- The pre-built .apk file for the app can be downloaded [here](https://drive.google.com/file/d/11gRFkX5z8_vxo-lSKzv3d1zy6IYXc863/view?usp=sharing).
 - Open the file and select the install option.
 - Once installed, give necessary permissions and start using the application.
 
 
 ## Features
   
-  - Live Location Sharing between members of a group using Location Markers on Google Maps.
+  - Live Location Sharing between members of a group using Location Markers on Google Maps. width="192" height="400
   
-    <img src="https://github.com/pallavpp/material-hosting/blob/main/Location_Tracking_App_ReadMe_Material/Screenshot%202021-07-26%20235949.png" width="192" height="400">
+    <img width="192" alt="Screenshot 2021-07-26 235949" src="https://user-images.githubusercontent.com/62967830/127062784-02cc9551-1f45-4826-9987-e38dd3f20a16.png">
   
   - Form multiple groups with your friends or family easily and share your location with each other.
-  
-    <img src="https://github.com/pallavpp/material-hosting/blob/main/Location_Tracking_App_ReadMe_Material/Screenshot_20210726-234417.png" width="192" height="400">
+
+    <img width="192" alt="Screenshot_20210726-234417" src="https://user-images.githubusercontent.com/62967830/127062963-eeb74747-5530-43b9-a2fb-e1d8696a188e.png">
     
   - Users can login either by creating an account or sign-in using their Google accounts as well.
 
-    <img src="https://github.com/pallavpp/material-hosting/blob/main/Location_Tracking_App_ReadMe_Material/Screenshot_20210726-234050.png" width="192" height="400">
+    <img width="192" alt="Screenshot_20210726-234050" src="https://user-images.githubusercontent.com/62967830/127063108-cdb63c0d-c826-4e3e-9713-fa213cc430ab.png">
     
   - Users have an option to edit their name and profile picture after creating an account.
  
-    <img src="https://github.com/pallavpp/material-hosting/blob/main/Location_Tracking_App_ReadMe_Material/Screenshot_20210726-234539.png" width="192" height="400">
+    <img width="192" alt="Screenshot_20210726-234539" src="https://user-images.githubusercontent.com/62967830/127063209-bc53a1b3-2c06-4a67-a732-a19a785564c1.png">
 
 
 ## How the Location Sharing Works?
@@ -41,3 +41,4 @@ The application is built using Flutter with Firebase and Firestore to handle the
   - [Pallav Pandey](https://github.com/pallavpp)
   - [Anurag Singhal](https://github.com/Anu8690)
   - [Aryan Rathee](https://github.com/aryanrathee)
+  - [Alokeveer Mondal](https://github.com/alokeveermondal)
