@@ -10,6 +10,12 @@ It is built using Flutter with Firebase and Firestore to handle the authenticati
 - Once installed, give necessary permissions and start using the application.
 
 
+## Requirements
+- [Flutter](https://flutter.dev/docs/get-started/install)
+
+If you face an error of *missing dependencies*, try running `flutter pub get`.
+
+
 ## Features
   - Live Location Sharing between members of a group using Location Markers on Google Maps.
 
